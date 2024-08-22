@@ -12,7 +12,9 @@ try {
     JOIN 
       c_product_color pc 
     ON 
-      p.id = pc.product_id;
+      p.id = pc.product_id
+    ORDER BY
+      p.id;
   ";
   $stmt = $pdo->prepare($sql);
   $stmt->execute();

@@ -61,8 +61,8 @@ try {
             <span class="input-group-text">庫存</span>
             <input name="stock[]" type="text" class="form-control" value="<?=$color["stock"]?>">
             <input type="hidden" class="valid" name="valid[]" value="<?=$color["vaild"]?>">
-            <div class="btn <?=$color["vaild"]===1?"btn-success":"btn-danger"?> btn-valid" value="<?=$color["vaild"]?>">
-              <?=$color["vaild"]===1?"<i class=\"fa-solid fa-toggle-on pointer-events-none\"></i>":"<i class=\"fa-solid fa-toggle-off pointer-events-none\"></i>"?>
+            <div class="btn <?=$color["vaild"]==1?"btn-success":"btn-danger"?> btn-valid" value="<?=$color["vaild"]?>">
+              <?=$color["vaild"]==1?"<i class=\"fa-solid fa-toggle-on pointer-events-none\"></i>":"<i class=\"fa-solid fa-toggle-off pointer-events-none\"></i>"?>
             </div>
           </div>
           <?php endforeach;?>
